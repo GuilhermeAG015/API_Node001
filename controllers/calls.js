@@ -6,7 +6,6 @@ module.exports = app  => {
     app.post('/atendimentos', (req, res) => {
         const call = req.body
 
-        Call.Adding(call)
-        res.send('Rota de stendimento via post')
+        Call.Adding(call, res)
     })
 }
